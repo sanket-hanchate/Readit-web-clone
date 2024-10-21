@@ -1,0 +1,1034 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.banner-page {
+    background-image: url("https://i0.wp.com/apeejay.news/wp-content/uploads/2023/10/281023-10-most-read-books-Blog.jpg?resize=740%2C524&ssl=1");
+    background-size: cover;
+    height: 120vh;
+    background-color: black;
+}
+
+.form-control {
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    width: 300px;
+    /* Expands on focus */
+    box-shadow: 0 0 5px rgba(229, 9, 20, 0.5);
+}
+
+
+.nav-link:hover {
+    color: #E50914;
+    /* Hover effect with Netflix red */
+}
+
+
+#navs {
+    color: #E50914;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: Lobster;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#navs a:hover {
+    color: #f40612;
+}
+
+#nav1 {
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+#nav2 {
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+#nav3 {
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+/* Banner styles */
+.banner {
+    background-image: url('your-background-image.jpg');
+    /* Full-screen background */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: #333;
+    /* Dark background for the dropdown */
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    background-color: #E50914;
+    color: white;
+}
+
+/* Banner content */
+.banner-content h1 {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.banner-buttons .btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.banner-buttons .btn.primary {
+    background-color: #E50914;
+    /* Netflix red */
+}
+
+.banner-buttons .btn.secondary {
+    background-color: #555;
+    /* Grey for secondary */
+}
+
+.banner-buttons .btn:hover {
+    opacity: 0.9;
+}
+
+.home-page {
+    background-size: cover;
+    background-color: black;
+}
+
+.button-1 {
+    color: white;
+    background-color: #E50914;
+    transition: background-color 0.3s ease;
+}
+
+.sanket {
+    background-color: black;
+}
+
+/* Ensure navbar-dark is used for dark theme */
+.navbar-dark .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    /* This sets the icon color to white */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    /* Optional: Makes the border of the button white */
+}
+
+.image-2 {
+    width: 100vw;
+    height: 60vh;
+    filter: brightness(70%);
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    animation-duration: 1.5s;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Slide Animation */
+.carousel-item .carousel-caption h5 {
+    animation-name: fadeInDown;
+}
+
+.carousel-item .carousel-caption p {
+    animation-name: fadeInUp;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* Carousel Indicators Styling */
+.carousel-indicators li {
+    background-color: #E50914;
+    /* Netflix-like red indicators */
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(229, 9, 20, 0.8);
+}
+
+/* Smooth Transition for Carousel */
+.carousel-inner .carousel-item {
+    transition: transform 1.2s ease-in-out;
+}
+
+.trending-books-heading {
+    font-size: 23px;
+    color: #ffffff;
+    font-family: Roboto;
+    margin-left: 10px;
+}
+
+.cart-1 {
+    border-radius: 10px;
+}
+
+.main-cart {
+    align-items: center;
+}
+
+.books-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.books-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+        0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.login-page {
+    background-image: url("https://i0.wp.com/apeejay.news/wp-content/uploads/2023/10/281023-10-most-read-books-Blog.jpg?resize=740%2C524&ssl=1");
+    height: 130vh;
+    background-size: cover;
+    align-items: center;
+}
+
+.bg-container {
+    background-color: #fff;
+    height: auto;
+    width: 40vw;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #E50914;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px 50px;
+    height: 55px;
+    border-radius: 7px;
+    margin-top: 7px;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #E50914;
+    outline: none;
+}
+
+.login-heading {
+    color: #E50914;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.input-email {
+    height: 55px;
+    width: 30vw;
+    border-radius: 7px;
+    margin-top: 7px;
+    margin-left: 48px;
+    font-family: "Roboto";
+    padding: 15px;
+}
+
+.email-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.login-button {
+    background-color: #E50914;
+    color: #fff;
+    height: 45px;
+    width: 150px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #c10c12;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+}
+
+.checkbox {
+    margin-right: 5px;
+}
+
+.remember-me label {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.forgot-link {
+    font-size: 14px;
+    color: #E50914;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.register-link {
+    margin-top: 30px;
+}
+
+.register-link p {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.register {
+    color: #E50914;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #E50914;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #c10c12;
+    transform: scale(1.05);
+}
+
+.back-button:focus {
+    outline: none;
+}
+
+/* Back Button Styling */
+.back-btn-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: #E50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 7px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #c10c12;
+    transform: scale(1.05);
+}
+
+.back-button:focus {
+    outline: none;
+}
+
+
+@media (max-width: 576px) {
+    .bg-container {
+        width: 90vw;
+        height: auto;
+        padding: 15px;
+    }
+
+    /* Adjusting the input fields */
+    .input-email {
+        width: 80vw;
+        margin-left: 0;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Adjusting headings */
+    .login-heading {
+        font-size: 32px;
+        margin-top: 15px;
+    }
+
+    .email-heading {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    /* Adjusting the login button */
+    .login-button {
+        width: 90px;
+        font-size: 14px;
+        padding: 8px;
+        margin-top: 15px;
+    }
+
+    /* Adjust the back button */
+    .go-back-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+.help-section {
+    background: linear-gradient(135deg, #E50914, #f06292);
+    padding: 50px 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.help-heading {
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.help-paragraph {
+    font-size: 18px;
+    color: #F1F1F1;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.input-search {
+    height: 40px;
+    width: 55vw;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.input-search:focus {
+    border-color: #E50914;
+    outline: none;
+}
+
+.help-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+}
+
+.sub-heading {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.faq-description {
+    font-size: 16px;
+    color: #E0E0E0;
+}
+
+.help-content {
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.faq-heading {
+    font-size: 23px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.faq-para {
+    font-size: 16px;
+    color: #E0E0E0;
+    font-family: Roboto;
+    padding: 14px;
+}
+
+.thanking-customers-section-img {
+    height: 200px;
+    width: 200px;
+}
+
+.more-help {
+    color: #333333;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.about-us-section {
+    background-color: black;
+    padding: 50px 0px;
+}
+
+.about-us-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.about-us-para {
+    font-size: 16px;
+    color: #595757;
+    font-family: Roboto;
+}
+
+.about-us-image {
+    height: 400px;
+    width: 400px;
+    margin-left: 60px;
+    border-radius: 10px;
+}
+
+.about-us-heading-1 {
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+
+.about-us-para-1 {
+    font-size: 14px;
+    color: #595757;
+    font-family: Roboto;
+}
+
+.join-us-section {
+    align-items: center;
+}
+
+.social-media {
+    border-radius: 50%;
+    background-color: #918d8d;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.icons {
+    font-size: 20px;
+    color: white;
+}
+
+.social-media:hover {
+    background-color: #E50914;
+}
+
+.social-line {
+    margin-top: 20px;
+    width: 60%;
+    border: none;
+    border-top: 0.3px solid #E50914;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-us-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+
+.register-page {
+    background-image: url("https://i0.wp.com/apeejay.news/wp-content/uploads/2023/10/281023-10-most-read-books-Blog.jpg?resize=740%2C524&ssl=1");
+    background-size: cover;
+    padding: 50px 0px;
+}
+
+.bg-containers {
+    height: auto;
+    background-color: white;
+    width: 40vw;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.register-heading {
+    color: #E50914;
+    font-size: 43px;
+    font-weight: 500;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.inputs {
+    height: 55px;
+    width: 30vw;
+    border-radius: 7px;
+    margin-top: 7px;
+    margin-left: 48px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email-heading {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.register-button {
+    height: 45px;
+    width: 130px;
+    border-radius: 7px;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 27px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #b20710;
+}
+
+.back-button {
+    height: 45px;
+    width: 120px;
+    border-radius: 7px;
+    background-color: #918d8d;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #757575;
+}
+
+.back-button-container {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .bg-containers {
+        width: 80vw;
+    }
+
+    .inputs {
+        width: 60vw;
+        margin-left: 10px;
+    }
+}
+
+.book-series {
+    background-color: black;
+    padding: 50px 0px;
+}
+
+.book-series-heading {
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.unordered-list {
+    padding-left: 60px;
+    margin-top: 30px;
+}
+
+.list {
+    font-size: 24px;
+    color: #ffffff;
+    list-style-type: square;
+    padding: 16px;
+}
+
+.access-button {
+    color: #fff;
+    text-align: center;
+    background-color: #E50914;
+    border-radius: 8px;
+    width: 440px;
+    height: 47px;
+    padding: 12px 138px;
+    font-family: Roboto;
+    font-weight: 500;
+    border-style: solid;
+    border-color: #E50914;
+    margin-top: 24px;
+    margin-left: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.access-button:hover {
+    background-color: #b20710;
+}
+
+.series-image {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 500px) {
+    .access-button {
+        height: 47px;
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 0px;
+        font-family: Roboto;
+    }
+}
+
+.free-access-login {
+    background-color: black;
+    padding: 50px 0px;
+}
+
+.free-access-heading {
+    font-size: 34px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.heading-2 {
+    color: white;
+    font-size: 18px;
+    font-family: Roboto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.input-name {
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 40px;
+    width: 300px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: transparent;
+    border-style: solid;
+    border: 0.3px solid white;
+    color: white;
+}
+
+.otps {
+    align-items: center;
+}
+
+.otp-button {
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 44px;
+    width: 300px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #E50914;
+    border-style: solid;
+    border-color: #E50914;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.otp-button:hover {
+    background-color: #b20710;
+}
+
+.cart-2 {
+    height: 40vh;
+    align-items: center;
+}
+
+.free-access-heading-1 {
+    font-size: 44px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.copyright-section {
+    background: linear-gradient(135deg, #2c2c2c, #000000);
+    color: #f0f0f0;
+    padding: 50px 0;
+}
+
+.copyright-sub-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#navs-1 {
+    color: #E50914;
+    font-size: 44px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: Lobster;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.copyright-para {
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.copyright-para i {
+    margin-right: 10px;
+    color: #e50914;
+}
+
+.list-1 {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+.links-heading,
+.payments-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+.unordered-list-1,
+.unordered-list-2 {
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.unordered-list-1 li,
+.unordered-list-2 li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.unordered-list-1 li:hover,
+.unordered-list-2 li:hover {
+    color: #e50914;
+    cursor: pointer;
+}
+
+.pay-image {
+    width: 50px;
+    margin: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pay-image:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.location-heading {
+    font-size: 16px;
+    margin-top: 40px;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-heading i {
+    margin-right: 10px;
+    color: #e50914;
+}
+
+.horizontal-line {
+    width: 90%;
+    margin: 30px auto;
+    border-bottom: 2px solid #e50914;
+}
+
+@media (max-width: 1200px) {
+    .payments-heading {
+        font-size: 22px;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+    .links-heading {
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 30px;
+        color: #ffffff;
+        text-align: left;
+        margin-left: 50px;
+    }
+}
+
+.social-images {
+    margin-left: 15px;
+    height: 40px;
+    width: 40px;
+}
